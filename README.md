@@ -1,43 +1,53 @@
-# Astro Starter Kit: Minimal
+# News Homepage
 
-```sh
-npm create astro@latest -- --template minimal
-```
+A news homepage that displays the latest articles and allows users to easily navigate through different categories.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+![Desktop Design](./demo.png)
 
-## 🚀 Project Structure
+## Features
 
-Inside of your Astro project, you'll see the following folders and files:
+Users are able to:
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Technologies used
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- ASTRO
+- TAILWIND
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Video explanation
+[![Watch the video](https://img.youtube.com/vi/wjhDao9k2AQ/0.jpg)](https://www.youtube.com/watch?v=wjhDao9k2AQ)
 
-## 🧞 Commands
+## Getting Started
 
-All commands are run from the root of the project, from a terminal:
+To run this project locally, follow these steps:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/CodinGitHub/news-homepage
+   ```  
+2. Navigate to the project directory:
+   ```bash
+   cd news-homepage
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-## 👀 Want to learn more?
+## Author
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+David Ruiz - Frontend Developer
+- [Github](https://github.com/Davichobits)
+- [Frontend Mentor](https://www.frontendmentor.io/profile/Davichobits) 
+- [Linkedin](https://www.linkedin.com/in/davidirc/)
+- [YouTube](https://www.youtube.com/CodingTube)
+- [codingtube.dev](https://codingtube.dev/)
+
+## GitAds Sponsored
+[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=codingithub/codingithub@github)](https://gitads.dev/v1/ad-track?source=codingithub/codingithub@github)
