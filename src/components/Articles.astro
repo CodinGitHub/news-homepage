@@ -33,7 +33,7 @@ const articles: Article[] = [
 ];
 ---
 
-<section>
+<section class="flex flex-col lg:flex-row">
   {
     articles.map(({number, title, description, img}) => (
       <article class="flex mb-8 gap-8">

@@ -1,34 +1,19 @@
 ---
-interface New {
-  title: string;
-  description: string;
+import { articles } from '../common/articles';
+import NewArticle from './NewArticle.astro';
+
+interface Props {
+  styles?: string;
 }
-const articles: New[] = [
-  {
-    title: 'Hydrogen VS Electric Cars',
-    description: 'Will hydrogen-fueled cars ever catch up to EVs?',
-  },
-  {
-    title: 'The Downsides of AI Artistry',
-    description:
-      'What are the possible adverse effects of on-demand AI image generation?',
-  },
-  {
-    title: 'Is VC Funding Drying Up?',
-    description:
-      'Private funding by VC firms is down 50% YOY. We take a look at what that means.',
-  },
-];
+
+const {styles} = Astro.props;
 ---
 
-<section class="bg-Very-dark-blue text-Off-white py-4 px-6 mb-16">
+<section class={`bg-Very-dark-blue text-Off-white py-4 px-6 mb-16 ${styles}`}>
   <h1 class="text-Soft-orange font-bold text-[2rem]">New</h1>
   {
-    articles.map(({title, description}) => (
-      <article class="border-b border-Grayish-blue py-8 last:border-none">
-        <a href="#" class="font-extrabold text-xl inline-block mb-2 cursor-pointer hover:text-Soft-orange">{title}</a>
-        <p class="text-Grayish-blue text-[0.9375rem]">{description}</p>
-      </article>
+    articles.slice(0,3).map((article) => (
+      <NewArticle {...article} />
     ))
   }
 </section>
